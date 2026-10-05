@@ -1,0 +1,25 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 10mm;
+  }
+  body {
+    background: #ffffff !important;
+    font-size: 10pt;
+  }
+  .no-print, .app-header, .toolbar, .table-actions {
+    display: none !important;
+  }
+  .document-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+  }
+  .input-flat, .meta-input, .item-input {
+    border: none !important;
+    background: transparent !important;
+  }
+  .summary-section, .doc-footer, .items-table tr {
+    page-break-inside: avoid; /* Prevents awkward mid-row page splits */
+  }
+}
